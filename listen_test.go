@@ -26,7 +26,6 @@ func TestListener(t *testing.T) {
 
 	// 	go func(c net.Conn) {
 	// 		defer c.Close()
-			
 
 	// 	}
 
@@ -81,7 +80,7 @@ func TestDial(t *testing.T) {
 			}(conn)
 		}
 	}()
-	
+
 	// client side of connection.
 	conn, err := net.Dial("tcp", listener.Addr().String())
 	if err != nil {
