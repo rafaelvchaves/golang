@@ -19,18 +19,6 @@ func TestListener(t *testing.T) {
 
 	t.Logf("bound to %q", listener.Addr())
 
-	// for {
-	// 	// listener.Accept blocks until the listener detects an incoming connection
-	// 	// and completes the TCP handshake.
-	// 	conn, err := listener.Accept()
-
-	// 	go func(c net.Conn) {
-	// 		defer c.Close()
-
-	// 	}
-
-	// }
-
 }
 
 func TestDial(t *testing.T) {
