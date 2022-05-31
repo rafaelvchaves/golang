@@ -51,4 +51,5 @@ TCP in Go
 method immediately return a timeout error. This can make sure that a network connection is not idle for a long time. Exceeded deadlines do not mean that the session is terminated, you can always call the set methods again and reads/writes
 will work again.
 - For long-running network connections that may experience extended idle periods at the application level, it is wise to implement a heartbeat between nodes to advance the deadline. A heartbeat is a message sent to the remote side with the intention of eliciting a reply, which we can use to advance the deadline like a heartbeat.
+- The bufio.Scanner allows for the reading of delimited data.
 
